@@ -36,7 +36,8 @@ recognition.addEventListener("result", (e) => {
         }
         if (
             text.includes("who make you") ||
-            text.includes("who is your creator")
+            text.includes("who is your creator") ||
+            text.includes("who created you")
         ) {
             p = document.createElement("p");
             p.classList.add("replay");
