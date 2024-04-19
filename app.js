@@ -27,6 +27,7 @@ recognition.addEventListener("result", (e) => {
 
         if (
             text.includes("what's your name") ||
+            text.includes("whats your name") ||
             text.includes("what is your name") ||
             text.includes("Who are you")
         ) {
@@ -35,6 +36,7 @@ recognition.addEventListener("result", (e) => {
             p.innerText = "My Name is Speech recognition";
             texts.appendChild(p);
         }
+
         if (
             text.includes("who make you") ||
             text.includes("who is your creator") ||
@@ -46,14 +48,44 @@ recognition.addEventListener("result", (e) => {
             texts.appendChild(p);
         }
 
+        if (
+            text.includes("which language do you like") ||
+            text.includes("which language do you prefer") ||
+            text.includes("what is your favourite language")
+        ) {
+            p = document.createElement("p");
+            p.classList.add("replay");
+            p.innerText = "ENGLISH";
+            texts.appendChild(p);
+        }
+
         if (text.includes("open my YouTube")) {
             p = document.createElement("p");
             p.classList.add("replay");
             p.innerText = "opening youtube channel";
             texts.appendChild(p);
-            console.log("opening youtube");
             window.open("https://www.youtube.com/");
         }
+
+        if (text.includes("open YouTube music")) {
+            p = document.createElement("p");
+            p.classList.add("replay");
+            p.innerText = "opening youtube music";
+            texts.appendChild(p);
+            window.open("https://music.youtube.com/");
+        }
+
+        if (text.includes("play any song on YouTube music") ||
+            text.includes("play a song on YouTube music") ||
+            text.includes("play a song on youtube music")
+        ) {
+            p = document.createElement("p");
+            p.classList.add("replay");
+            p.innerText = "opening youtube music";
+            texts.appendChild(p);
+            window.open("https://music.youtube.com/watch?v=5DF9aRuiOZo&list=RDAMVM5DF9aRuiOZo");
+        }
+        
         p = document.createElement("p");
     }
 });
