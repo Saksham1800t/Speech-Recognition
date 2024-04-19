@@ -27,7 +27,8 @@ recognition.addEventListener("result", (e) => {
 
         if (
             text.includes("what's your name") ||
-            text.includes("what is your name")
+            text.includes("what is your name") ||
+            text.includes("Who are you")
         ) {
             p = document.createElement("p");
             p.classList.add("replay");
