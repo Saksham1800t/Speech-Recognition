@@ -86,6 +86,16 @@ recognition.addEventListener("result", (e) => {
             window.open("https://music.youtube.com/watch?v=5DF9aRuiOZo&list=RDAMVM5DF9aRuiOZo");
         }
         
+
+        if (text.includes("what is your income") ||
+            text.includes("how much do you earn") 
+        ) {
+            p = document.createElement("p");
+            p.classList.add("replay");
+            p.innerText = "I am unemployed :( :(";
+            texts.appendChild(p);
+        }
+        
         p = document.createElement("p");
     }
 });
