@@ -12,4 +12,4 @@ this works only on some commands which are written on web page.
 I am try to add new commands in this system.
 
 # forking
-PLease see this project and help me to improve this web application
+PLease see this project and help me to improve this web application.
